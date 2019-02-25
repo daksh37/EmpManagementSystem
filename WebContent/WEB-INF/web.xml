@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app id="WebApp_ID">
+	<display-name>EmployeeManagementSystem</display-name>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<display-name>LoginServlet</display-name>
+		<description></description>
+		<servlet-class>com.cts.employeemanagementsystem.controller.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>empRegistrationServlet</servlet-name>
+		<display-name>empRegistrationServlet</display-name>
+		<description></description>
+		<servlet-class>com.cts.employeemanagementsystem.controller.empRegistrationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>empRegistrationServlet</servlet-name>
+		<url-pattern>/empRegistrationServlet</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>login.html</welcome-file>
+		
+	</welcome-file-list>
+</web-app>
